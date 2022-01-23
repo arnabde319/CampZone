@@ -1,0 +1,37 @@
+<% layout('layouts/boilerplate') %> 
+
+<div class="container d-flex-row justify-content-center align-item-center mt-3">
+    <div class="row">
+        <div class="col-md-4 offset-md-3 col-xl-4 offset-xl-4">
+            <div class="card shadow">
+                <img style="width: 100%; height: 14vw; object-fit: cover" src="https://images.unsplash.com/photo-1571863533956-01c88e79957e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" alt="" class="card-img-top">
+                <div class="card-body ms-2 me-2">
+                    <h4 class="card-title mb-4 mt-2 fw-light">Log In</h4>
+                    <form action="/login" method="POST" class="validated-form" novalidate>
+                        <div class="form-floating mb-3"> 
+                            <input class="form-control" type="text" id="username" name="username" placeholder="name@example.com" required>
+                            <label class="floating-input text-muted fw-lighter" for="username">Username</label>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input class="form-control" type="password" id="password" name="password" placeholder="Password" required>
+                            <label class="floating-input text-muted fw-lighter" for="password">Password</label>
+                            <div class="valid-feedback">
+                                Looks good!
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button class="btn btn-lg btn-dark fw-light">Log In</button>
+                        </div>
+                        <p class="text-center mt-2 mb-2 text-muted">Or</p>
+                        <div class="d-grid gap-2 mb-2">
+                            <a class="btn btn-danger btn-lg fw-light" href="/auth/google"><i class="fab fa-google me-3 "></i>Continue with Google</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+.nav {
+    background-color: #000;
+}
+
+#cluster-map {
+    width: 100%;
+    height: 450px;
+}
+
+#map {
+    width: 100%;
+    height: 400px;
+}
+
+body{
+    background-color: #F3F1F5;
+}
+
+.delete {
+    background-color: white; 
+    color: grey; 
+    border: none;
+}
