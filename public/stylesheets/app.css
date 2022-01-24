@@ -21,3 +21,7 @@ body{
     color: grey; 
     border: none;
 }
+
+.img {
+    max-height: 580px;
+}
